@@ -1,0 +1,37 @@
+/* nav{
+    background: #8280ff;
+    height: 10vh;
+    width: 100vw;
+    margin-top: -2vh;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    margin: auto;
+    display: inline;
+}
+nav ul li{
+    text-decoration: none;
+
+} */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+
+* {
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+}
+.bars{
+    font-size: 32px;
+    transition: all .5s;
+}
+.bars:active{
+    font-size: 24px;
+}

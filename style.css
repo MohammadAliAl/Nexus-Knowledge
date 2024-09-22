@@ -27,7 +27,7 @@ nav ul li{
 
 body {
     margin: 0;
-    
+
 }
 
 .bars {
@@ -46,6 +46,9 @@ body {
     padding: 20px;
     background: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: revealAnimation 1.5s ease-in-out forwards;
 }
 
 .header {
@@ -118,4 +121,22 @@ footer {
          1px -1px 0px black,
         -1px  1px 0px black,
          1px  1px 0px black; /* Creates a stroke effect */
+         opacity: 0;
+         transform: translateY(50px);
+         animation: revealAnimation 1.5s ease-in-out forwards;
+}
+.reveal{
+    opacity: 0;
+    transform: translateY(50px);
+    animation: revealAnimation 1.5s ease-in-out forwards;
+}
+@keyframes revealAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

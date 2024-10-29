@@ -17,14 +17,15 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f0f8ff;
             color: #333;
+            background-color: #2c2c2c;
         }
 
         .container {
             max-width: 800px;
             margin: 80px auto;
-            background: #fff;
+            background: url(chalkboard-517818.jpg);
+            background-position: center;
             padding: 20px;
             border-radius: 12px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -33,7 +34,7 @@
         h1 {
             font-size: 32px;
             margin-bottom: 20px;
-            color: #ff6347;
+            color: white;
             /* Tomato color */
             text-align: center;
         }
@@ -42,38 +43,37 @@
             margin-bottom: 30px;
             padding: 15px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .section:nth-child(odd) {
-            background: #e0ffff;
-            /* Light cyan */
+            background: transparent;
+            border: 1px solid white;
         }
 
         .section:nth-child(even) {
-            background: #f5f5dc;
-            /* Beige */
+            background: transparent;
+            border: 1px solid white;
         }
 
         .section h2 {
             font-size: 24px;
-            color: #4682b4;
+            color: white;
             /* Steel blue */
             margin-bottom: 10px;
         }
 
         .section p {
             font-size: 18px;
-            color: #333;
+            color: white;
         }
 
         .contact-button {
             display: inline-block;
             padding: 12px 25px;
             font-size: 16px;
-            color: #fff;
-            background-color: #32cd32;
-            /* Lime green */
+            color: #2c2c2c;
+            background-color: white;
+            border: 1px solid white;
             text-decoration: none;
             border-radius: 6px;
             margin-top: 10px;
@@ -81,7 +81,8 @@
         }
 
         .contact-button:hover {
-            background-color: #228b22;
+            background-color: transparent;
+            color: white;
             /* Forest green */
         }
     </style>
@@ -89,14 +90,22 @@
 
 <body>
     <nav class="navbar navbar-expand-lg"
-        style="padding: 2vh 2vw; position: fixed; top: 0; left: 0; z-index: 1000; width: 100%;">
-        <a class="navbar-brand" href="index.html" style="color: white; "> 
+        style="padding: 2vh 2vw; position: fixed; top: 0; left: 0; z-index: 1000; width: 100%; background-image: url('chalkboard-517818.jpg'); background-size: cover; background-position: center; padding-left: 6vw;">
+        <a class="navbar-brand" href="index.html" style="color: white;">
             <img src="Logo.png" alt="Logo" style="height: 6vh; border-radius: 2vh; margin-top: -1vh;">
             Nexus Knowledge
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars bars" style="color: white;"></i>
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: -5vw;">
+            <label class="hamburger" style="height: 6vh; margin-top: -2vh;">
+                <input type="checkbox">
+                <svg viewBox="0 0 32 32">
+                    <path class="line line-top-bottom"
+                        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                    </path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
@@ -116,19 +125,27 @@
                     <a class="nav-link" href="services.html" style="color: white;"><i
                             class="fa-solid fa-chalkboard-user"></i> Services</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Login.php" style="color: white;"><i
+                            class="fa-solid fa-chalkboard-user"></i> Login(Coming Soon)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html" style="color: white;"><i
+                            class="fa-solid fa-chalkboard-user"></i> SignUp(Coming Soon)</a>
+                </li>
             </ul>
         </div>
     </nav>
     <div class="container" style="margin-top: 15vh;">
         <h1>Contact Us</h1>
         <div class="section">
-            <h2>For Students</h2>
+            <h2>For Students</h2><hr style="color: white;">
             <p>Are you a student looking for home tuition or have questions about our services? Click below to get in
                 touch and start your journey towards academic success.</p>
             <a href="StudentContact.html" class="contact-button">Contact Us for Students</a>
         </div>
         <div class="section">
-            <h2>For Teachers</h2>
+            <h2>For Teachers</h2><hr style="color: white;">
             <p>Are you a teacher interested in joining our team or seeking more information? Click below to reach out
                 and explore exciting opportunities with us.</p>
             <a href="TeachersContact.html" class="contact-button">Contact Us for Teachers</a>

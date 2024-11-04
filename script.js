@@ -32,3 +32,10 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+function studentContact() {
+    window.location.href = "StudentContact.html";
+  }
+
+  function teacherContact() {
+    window.location.href = "TeachersContact"
+  }

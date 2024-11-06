@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+* {
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    background-color: #2c2c2c;
+}
+
+nav {
+    background: #10443e;
+}
+
+.bars {
+    font-size: 32px;
+    transition: all .3s;
+}
+
+.bars:active {
+    font-size: 24px;
+}
+
+.container1 {
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2vh;
+
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: revealAnimation 1.5s ease-in-out forwards;
+    border-radius: 2vh;
+}
+
+.header {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.intro {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-container p {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.social-icons a:hover {
+    color: #ccc;
+}
+
+.designer-credit {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.caraouselp {
+    color: white;
+    /* Text color */
+    -webkit-text-stroke: .5px black;
+    transform: translateY(50px);
+    animation: revealAnimation 1.5s ease-in-out forwards;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: revealAnimation 1.5s ease-in-out forwards;
+}
+
+@keyframes revealAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.floating-video {
+    position: fixed;
+    text-align: center;
+    bottom: 70px;
+    /* Positioning from the bottom */
+    /* Positioning from the right */
+    width: 40vh;
+    /* Set width as needed */
+    height: auto;
+    /* Automatic height based on content */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Semi-transparent background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    /* Ensure it appears above other content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.floating-video video {
+    width: 80%;
+    /* Make video responsive */
+    border-radius: 8px 8px 0 0;
+    /* Rounded corners for the top */
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+.hamburger {
+    cursor: pointer;
+}
+
+.hamburger input {
+    display: none;
+}
+
+.hamburger svg {
+    /* The size of the SVG defines the overall size */
+    height: 3em;
+    /* Define the transition for transforming the SVG */
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    /* Define the transition for transforming the Stroke */
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+    stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked+svg {
+    transform: rotate(-45deg);
+}
+
+.hamburger input:checked+svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+}
+.nav-link:hover{
+    color: wheat;
+}
+

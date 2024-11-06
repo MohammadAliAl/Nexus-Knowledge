@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Nexus Knowledge</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="Favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="Favicon/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="Favicon/favicon-32x32.png" type="image/png">
+
+    <style>
+        body {
+            background-color: #2c2c2c;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: url(chalkboard-517818.png);
+            background-position: center;
+            background-size: cover;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: white;
+            /* Tomato color */
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: white;
+            /* Lime green */
+            margin-top: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .service {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .service h3 {
+            font-size: 20px;
+            color: white;
+            /* Tomato color */
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            margin: 0;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .cta button {
+            padding: 12px 20px;
+            font-size: 16px;
+            color: black;
+            background: white;
+            /* Lime green */
+            border: 2px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta button:hover {
+            background-color: #2c2c2c;
+            color: white;
+            /* Forest green */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg"
+        style="padding: 2vh 2vw; position: fixed; top: 0; left: 0; z-index: 1000; width: 100%; background-image: url('chalkboard-517818.png'); background-size: cover; background-position: center; padding-left: 6vw;">
+        <a class="navbar-brand" href="index.html" style="color: white;">
+            <img src="Logo.png" alt="Logo" style="height: 6vh; border-radius: 2vh; margin-top: -1vh;"><strong>
+                Nexus Knowledge</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: -5vw;">
+            <label class="hamburger" style="height: 6vh; margin-top: -2vh;">
+                <input type="checkbox">
+                <svg viewBox="0 0 32 32">
+                    <path class="line line-top-bottom"
+                        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                    </path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html" style="color: white;"><i
+                            class="fa-solid fa-house"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" style="color: white;"><i class="fa-solid fa-user"></i>
+                        About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html" style="color: white;"><i
+                            class="fa-solid fa-address-book"></i> Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html" style="color: white;"><i
+                            class="fa-solid fa-chalkboard-user"></i> Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Login.php" style="color: white;"><i
+                            class="fa-solid fa-chalkboard-user"></i> Login(Coming Soon)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html" style="color: white;"><i
+                            class="fa-solid fa-chalkboard-user"></i> SignUp(Coming Soon)</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" style="margin-top: 15vh;">
+        <h1>Our Services</h1>
+
+        <div class="service">
+            <h3>Personalized Home Tuition</h3><hr style="color: white;">
+            <p>
+                Our core service is providing personalized home tuition tailored to each student’s unique needs and
+                learning style. Our experienced tutors offer one-on-one sessions in various subjects to ensure effective
+                learning and academic success.
+            </p>
+        </div>
+
+        <div class="service">
+            <h3>Online Tutoring Sessions</h3><hr style="color: white;">
+            <p>
+                We offer flexible online tutoring sessions to accommodate students who prefer learning from the comfort
+                of their home. Our virtual classes are equipped with interactive tools to facilitate a seamless and
+                engaging learning experience.
+            </p>
+        </div>
+
+        <div class="service">
+            <h3>Test Preparation</h3><hr style="color: white;">
+            <p>
+                Prepare for your exams with our focused test preparation services. Our tutors provide specialized
+                coaching and practice materials for various exams, helping students build confidence and achieve their
+                desired scores.
+            </p>
+        </div>
+
+        <div class="service">
+            <h3>Homework Assistance</h3><hr style="color: white;">
+            <p>
+                We offer support with homework and assignments to help students understand and complete their tasks
+                efficiently. Our tutors assist in clarifying doubts and providing guidance to enhance students'
+                problem-solving skills.
+            </p>
+        </div>
+
+        <div class="service">
+            <h3>Educational Counseling</h3><hr style="color: white;">
+            <p>
+                Our educational counseling services help students make informed decisions about their academic paths. We
+                provide advice on subject selection, study techniques, and future educational opportunities to support
+                students' long-term goals.
+            </p>
+        </div>
+
+        <div class="cta">
+            <button onclick="location.href='contact.html'">Get in Touch</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Nexus Knowledge. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="TOS.html">Terms of Service</a>
+                <a href="PP.html">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="designer-credit">
+            Website designed by <a href="https://techcrest.netlify.app" target="_blank"
+                style="color: #fff; text-decoration: underline;">TechCrest inc.</a>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+<script>
+    window.embeddedChatbotConfig = {
+        chatbotId: "zhqT7X70fyJ7GFoBfSH2X",
+        domain: "www.chatbase.co"
+    }
+</script>
+<script src="https://www.chatbase.co/embed.min.js" chatbotId="zhqT7X70fyJ7GFoBfSH2X" domain="www.chatbase.co" defer>
+</script>
+
+</html>

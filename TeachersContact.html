@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Home Tuition</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: white;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container1 {
+            max-width: 700px;
+            width: 90%;
+            background: rgba(44, 44, 44, 0.85);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+            background-size: cover;
+            background-blend-mode: overlay;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #e0e0e0;
+        }
+
+        p {
+            font-size: 14px;
+            color: #cccccc;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        label {
+            text-align: left;
+            font-weight: bold;
+            color: #e0e0e0;
+            font-size: 14px;
+        }
+
+        form input,
+        form textarea,
+        form select {
+            padding: 10px;
+            font-size: 15px;
+            border: 1px solid #555;
+            border-radius: 6px;
+            background: #2e2e2e;
+            color: #e0e0e0;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        form input:focus,
+        form textarea:focus,
+        form select:focus {
+            border-color: #6c9d3b;
+        }
+
+        form button {
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #2c2c2c;
+            background-color: #e0e0e0;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #6c9d3b;
+            color: white;
+        }
+
+        .disclaimer {
+            display: flex;
+            align-items: flex-start;
+            font-size: 13px;
+            color: #ccc;
+            margin-top: 10px;
+        }
+
+        .disclaimer label {
+            margin-left: 8px;
+        }
+
+        .error {
+            color: #ff6b6b;
+            font-size: 12px;
+            margin-top: -5px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .terms-link {
+            color: #b0c4de;
+            text-decoration: none;
+        }
+
+        .terms-link:hover {
+            color: #6c9d3b;
+            text-decoration: underline;
+        }
+
+        /* Chalkboard-style checkboxes */
+        input[type="checkbox"] {
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            border: 2px solid white;
+            border-radius: 4px;
+            background-color: transparent;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+            cursor: pointer;
+            position: relative;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        /* Checkbox when checked */
+        input[type="checkbox"]:checked {
+            background-color: #4CAF50;
+            border-color: #4CAF50;
+        }
+
+        input[type="checkbox"]:checked::after {
+            content: " ✓";
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            position: absolute;
+            top: -1px;
+            left: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <h1>Contact Us-Teachers</h1>
+        <hr style="color: white;">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="3f6c7e6e-cb2e-4a0b-8216-dc424d3c4b95">
+
+            <!-- Form Inputs -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name of the Teacher" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email of the Teacher" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone no. of the Teacher" required>
+
+            <label for="grade">Grade Levels you want to teach:</label>
+            <select id="grade" name="grade[]" multiple required>
+                <option value="Preschool">Preschool</option>
+                <option value="Below Grade 1">Below Grade 1</option>
+                <option value="Grade 1">Grade 1</option>
+                <option value="Grade 2">Grade 2</option>
+                <option value="Grade 3">Grade 3</option>
+                <option value="Grade 4">Grade 4</option>
+                <option value="Grade 5">Grade 5</option>
+                <option value="Grade 6">Grade 6</option>
+                <option value="Grade 7">Grade 7</option>
+                <option value="Grade 8">Grade 8</option>
+                <option value="Grade 9">Grade 9</option>
+                <option value="Grade 10">Grade 10</option>
+                <option value="Grade 11">Grade 11</option>
+                <option value="Grade 12">Grade 12</option>
+                <option value="Undergraduate">Undergraduate</option>
+                <option value="Graduate">Graduate</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="aadhar">Aadhar Card Number:</label>
+            <input type="text" id="aadhar" name="aadhar" pattern="\d{12}" maxlength="12"
+                placeholder="Enter 12-digit Aadhar Card Number" required>
+            <small class="error" id="aadharError"></small>
+
+            <div class="disclaimer">
+                <input type="checkbox" id="agreement1" name="agreement1" required>
+                <label for="agreement1">
+                    I understand that the Aadhar card number I provide will be used solely for verification purposes
+                    related to the home tuition agreement and will be stored securely.
+                    I consent to the collection and use of my Aadhar card number for these purposes. I am aware that any
+                    misuse or unauthorized use of my Aadhar card number will be subject to legal action as per
+                    applicable laws.
+                </label>
+            </div>
+
+            <label for="subjects">Preferred Subjects:</label>
+            <select id="subjects" name="subjects[]" multiple required>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Science">Science</option>
+                <option value="English">English</option>
+                <option value="History">History</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Type your Message" required></textarea>
+
+
+            <div class="h-captcha" data-captcha="true"></div>
+            <div class="disclaimer">
+                <input type="checkbox" id="agreement" name="agreement" required>
+                <label for="agreement">
+                    I understand that if any issues arise related to the agreement, legal action may be taken.
+                    By submitting this form, I agree to these <a style="color: wheat;" href="TOS.html">Terms of
+                        Sevice</a> and provide my
+                    consent for the collection of my
+                    Aadhar card number.
+                </label>
+            </div>
+
+            <input type="hidden" name="redirect" value="https://nexusknowledge.netlify.app/Thanks">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+<script>
+    function validateForm() {
+        const aadharInput = document.getElementById('aadhar');
+        const aadharError = document.getElementById('aadharError');
+
+        // Remove any previous error message
+        aadharError.textContent = '';
+
+        // Validate Aadhar number
+        if (aadharInput.value.length !== 12 || !/^\d{12}$/.test(aadharInput.value)) {
+            aadharError.textContent = 'Aadhar card number must be exactly 12 digits.';
+            return false; // Prevent form submission
+        }
+
+        return true; // Allow form submission
+    }
+</script>
+<script src="https://web3forms.com/client/script.js" async defer></script>
+<script>
+    window.embeddedChatbotConfig = {
+        chatbotId: "zhqT7X70fyJ7GFoBfSH2X",
+        domain: "www.chatbase.co"
+    }
+</script>
+<script src="https://www.chatbase.co/embed.min.js" chatbotId="zhqT7X70fyJ7GFoBfSH2X" domain="www.chatbase.co" defer>
+</script>
+
+</html>

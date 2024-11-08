@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
+        /* Google Fonts */
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
 
+        /* Universal styles */
         * {
             box-sizing: border-box;
             font-family: "Open Sans", sans-serif;
@@ -35,35 +38,27 @@
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
         }
 
-        /* Brand title and heading styling */
-        .brand-title {
-            font-size: 32px;
+        /* Title and heading styling */
+        .form-box h2 {
+            font-size: 28px;
             font-weight: 800;
             color: #e0e0e0;
-            margin-bottom: 15px;
             text-align: center;
-        }
-
-        .form-heading {
-            font-size: 24px;
-            font-weight: 600;
-            color: #cccccc;
             margin-bottom: 25px;
-            text-align: center;
         }
 
-        /* Input group styling */
-        .input-group {
+        /* Input styling */
+        .input-box {
             margin-bottom: 20px;
         }
 
-        .input-group label {
+        .input-box label {
             font-weight: bold;
             color: #e0e0e0;
             font-size: 14px;
         }
 
-        .input-group input {
+        .input-box input {
             width: 100%;
             padding: 12px;
             font-size: 15px;
@@ -75,11 +70,11 @@
             transition: border-color 0.2s;
         }
 
-        .input-group input::placeholder {
+        .input-box input::placeholder {
             color: #999;
         }
 
-        .input-group input:focus {
+        .input-box input:focus {
             border-color: #6c9d3b;
         }
 
@@ -95,6 +90,7 @@
             cursor: pointer;
             transition: background-color 0.3s, color 0.3s;
             width: 100%;
+            margin-top: 10px;
         }
 
         .btn:hover {
@@ -102,13 +98,13 @@
             color: white;
         }
 
-        /* Toggle section styling */
-        .toggle-section {
+        /* Toggle text and link styling */
+        .toggle-box {
             margin-top: 15px;
             text-align: center;
         }
 
-        .toggle-text {
+        .toggle-box p {
             color: #cccccc;
             font-size: 14px;
         }
@@ -154,41 +150,39 @@
             left: 2px;
         }
     </style>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
-
-    <!-- External JS -->
-    <script type="module" src="register.js"></script>
-
-    <!-- Favicon (optional) -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <div class="container">
         <div class="form-box">
-            <h2 class="form-heading">Login</h2>
-
-            <form id="loginForm">
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <div class="input-box" id="nameBox">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
                 </div>
 
-                <div class="input-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <div class="input-box" id="phoneBox">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" placeholder="Enter your phone number">
                 </div>
 
-                <button type="submit" class="btn">Login</button>
+                <div class="input-box">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" placeholder="Enter your email">
+                </div>
+
+                <div class="input-box">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" placeholder="Create a password">
+                </div>
+
+                <button type="submit" class="btn">Sign Up</button>
+
+                <div class="toggle-box">
+                    <p>Already have an account? <a href="Login.html" class="link-btn">Login</a></p>
+                </div>
             </form>
-
-            <div class="toggle-section">
-                <p class="toggle-text">Don't have an account?
-                    <a href="signup.html" id="toggleButton" class="link-btn">Sign Up</a>
-                </p>
-            </div>
         </div>
     </div>
 </body>

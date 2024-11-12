@@ -5,6 +5,7 @@
     font-family: "Gloria Hallelujah", cursive;
     font-weight: 400;
     font-style: normal;
+    box-sizing: border-box;
 }
 
 body {
@@ -223,5 +224,236 @@ footer {
 }
 .nav-link:hover{
     color: wheat;
+}
+/* Creating a div for the first blog */
+.blog1{
+    margin: 10vh auto;
+    padding: 10px;
+    left: 10%;
+    background-color: rgb(245, 245, 245);
+    height: auto;
+    width: 60vw;
+    /* border: 1px solid red ; */
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px  rgb(184, 184, 184) inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* First blog heading */
+.blog1-heading{
+    margin-top: 2vh;
+    /* border: 1px solid red; */
+    height: auto;
+    width: auto;
+}
+.blog1-heading p{
+    font-weight:bolder;
+    font-size: 2.3vw;
+}
+/* First blog heading responsive */
+@media (min-width: 850px) and (max-width: 1000px) {
+    .blog1-heading p{
+      font-size: 2.8vw;
+    }  
+}
+@media (min-width: 610px) and (max-width: 850px) {
+    .blog1-heading p{
+      font-size: 3.5vw;
+    }  
+}
+@media (max-width: 610px) {
+    .blog1-heading p{
+      font-size: 5vw;
+    }  
+}
+/* Creating and defining div for First blog introduction */
+.blog1-intro{
+    /* border: 1px solid red; */
+    margin-top: 3vh;
+    height: auto;
+    width: auto;
+}
+/* Creating and defining div for VARK model */
+.vark{
+    margin-top: 5vh;
+    /* border: 1px solid blue; */
+    height: auto; 
+    width: auto;
+}
+/* Creating and defining div for VARK model heading  */
+.vark-heading{
+    /* border: 1px solid red; */
+    height: auto;
+    width: 100%;
+}
+.vark-heading span{
+    font-weight:bolder;
+    font-size: 2.3vw;
+}
+/* VARK model heading  responsive */
+@media (min-width: 850px) and (max-width: 1000px) {
+    .vark-heading span{
+      font-size: 2.8vw;
+    }  
+}
+@media (min-width: 610px) and (max-width: 850px) {
+    .vark-heading span{
+      font-size: 3.5vw;
+    }  
+}
+@media (max-width: 610px) {
+    .vark-heading span{
+      font-size: 5vw;
+  }
+  /* Defining and creating div for VARK content*/
+}
+.vark-content{
+    margin-top: 3vh;
+    width: auto;
+    height: auto;
+    /* border: 1px solid red; */
+    line-height: 2;
+    word-spacing: 4px;
+}
+.vark-content img{
+    float: right;
+    width: 230px;
+}
+/* VARK content responsive */
+@media (max-width: 950px) {
+    .vark-content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .vark-content img{
+        margin-bottom: 2vh;
+    }
+    .blog1{
+    width: 90vw;
+    }
+}
+
+.vark-content span{
+    font-weight: 900;
+    display: block;
+    width: 100%;
+}
+/* Defining and creating div for Do they help */
+.do-they-help{
+    height: auto;
+    width: auto;
+    /* border: 1px solid red; */
+    margin-top: 5vh ;
+}
+/* Defining and creating div for Do they help heading */
+
+.do-they-help-heading{
+    height: auto;
+    width: 100%;
+    margin-bottom: 3vh ;
+    /* border: 1px solid blue; */
+}
+/* Do they help heading responsive */
+.do-they-help-heading p{
+    font-weight:bolder;
+    font-size: 2.3vw;
+}
+@media (min-width: 850px) and (max-width: 1000px) {
+    .do-they-help-heading p{
+      font-size: 2.8vw;
+    }  
+}
+@media (min-width: 610px) and (max-width: 850px) {
+    .do-they-help-heading p{
+      font-size: 3.5vw;
+    }  
+}
+@media (max-width: 610px) {
+    .do-they-help-heading p{
+      font-size: 5vw;
+    }  
+}
+/* Defining and creating div for alternatives fo VARK */
+
+.alt-vark{
+    height: auto;
+    width: auto;
+    /* border: 1px solid red; */
+    margin-top: 5vh ;
+}
+/* Defining and creating div for alternatives fo VARK heading */
+
+.alt-vark-heading{
+    height: auto;
+    width: 100%;
+    margin-bottom: 3vh ;
+    /* border: 1px solid blue; */
+}
+/* Alternative of VARK heading responsive */
+.alt-vark-heading p{
+    font-weight:bolder;
+    font-size: 2.3vw;
+}
+@media (min-width: 850px) and (max-width: 1000px) {
+    .alt-vark-heading p{
+      font-size: 2.8vw;
+    }  
+}
+@media (min-width: 610px) and (max-width: 850px) {
+    .alt-vark-heading p{
+      font-size: 3.5vw;
+    }  
+}
+@media (max-width: 610px) {
+    .alt-vark-heading p{
+      font-size: 5vw;
+    }  
+}
+.alt-vark-content span{
+    font-weight: 900;
+    display: block;
+    width: 100%;
+
+}
+/* Defining and creating div for how nexus knowledge tackel them */
+.nexus-knowledge-tackle{
+    height: auto;
+    width: auto;
+    /* border: 1px solid red; */
+    margin-top: 5vh ;
+}
+/* Defining and creating div for (how nexus knowledge tackel them)'s heading */
+.nexus-knowledge-tackle-heading{
+    height: auto;
+    width: 100%;
+    margin-bottom: 3vh ;
+    /* border: 1px solid blue;    */
+}
+.nexus-knowledge-tackle-heading p{
+    font-weight:bolder;
+    font-size: 2.3vw;
+}
+/* (how nexus knowledge tackel them)'s heading responsive */
+@media (min-width: 850px) and (max-width: 1000px) {
+    .nexus-knowledge-tackle-heading p{
+      font-size: 2.8vw;
+    }  
+}
+@media (min-width: 610px) and (max-width: 850px) {
+    .nexus-knowledge-tackle-heading p{
+      font-size: 3.5vw;
+    }  
+}
+@media (max-width: 610px) {
+    .nexus-knowledge-tackle-heading p{
+      font-size: 5vw;
+    }  
+}
+/* Defining and creating div for (how nexus knowledge tackel them)'s content */
+.nexus-knowledge-tackle-content{
+    height: auto ;
+    width: auto;
 }
 

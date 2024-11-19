@@ -230,7 +230,7 @@ footer {
     margin: 10vh auto;
     padding: 10px;
     left: 10%;
-    background-color: rgb(245, 245, 245);
+    background-color: caf0f8;
     height: auto;
     width: 60vw;
     /* border: 1px solid red ; */
@@ -239,6 +239,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color:  #fffbf3;
+
+
 }
 /* First blog heading */
 .blog1-heading{
@@ -246,10 +249,12 @@ footer {
     /* border: 1px solid red; */
     height: auto;
     width: auto;
+    color: rgb(114, 114, 255);
 }
 .blog1-heading p{
     font-weight:bolder;
     font-size: 2.3vw;
+    font-family: "Roboto", serif;
 }
 /* First blog heading responsive */
 @media (min-width: 850px) and (max-width: 1000px) {
@@ -274,6 +279,9 @@ footer {
     height: auto;
     width: auto;
 }
+.blog1-intro p{
+    font-family: "Roboto", serif;
+}
 /* Creating and defining div for VARK model */
 .vark{
     margin-top: 5vh;
@@ -286,10 +294,12 @@ footer {
     /* border: 1px solid red; */
     height: auto;
     width: 100%;
+    color: rgb(97, 97, 255);
 }
 .vark-heading span{
     font-weight:bolder;
     font-size: 2.3vw;
+    font-family: "Roboto", serif;
 }
 /* VARK model heading  responsive */
 @media (min-width: 850px) and (max-width: 1000px) {
@@ -315,6 +325,7 @@ footer {
     /* border: 1px solid red; */
     line-height: 2;
     word-spacing: 4px;
+    font-family: "Roboto", serif;
 }
 .vark-content img{
     float: right;
@@ -339,6 +350,8 @@ footer {
     font-weight: 900;
     display: block;
     width: 100%;
+    font-family: "Roboto", serif;
+    color: rgb(135, 135, 237);
 }
 /* Defining and creating div for Do they help */
 .do-they-help{
@@ -353,12 +366,17 @@ footer {
     height: auto;
     width: 100%;
     margin-bottom: 3vh ;
+    color: rgb(100, 100, 255);
     /* border: 1px solid blue; */
 }
 /* Do they help heading responsive */
 .do-they-help-heading p{
     font-weight:bolder;
     font-size: 2.3vw;
+    font-family: "Roboto", serif;
+}
+.do-they-help-content p , .do-they-help-content a{
+    font-family: "Roboto", serif;
 }
 @media (min-width: 850px) and (max-width: 1000px) {
     .do-they-help-heading p{
@@ -389,12 +407,14 @@ footer {
     height: auto;
     width: 100%;
     margin-bottom: 3vh ;
+    color: rgb(100, 100, 255);
     /* border: 1px solid blue; */
 }
 /* Alternative of VARK heading responsive */
 .alt-vark-heading p{
     font-weight:bolder;
     font-size: 2.3vw;
+    font-family: "Roboto", serif;
 }
 @media (min-width: 850px) and (max-width: 1000px) {
     .alt-vark-heading p{
@@ -411,11 +431,15 @@ footer {
       font-size: 5vw;
     }  
 }
+.alt-vark-content{
+    font-family: "Roboto", serif;
+}
 .alt-vark-content span{
     font-weight: 900;
     display: block;
     width: 100%;
-
+    font-family: "Roboto", serif;
+    color: rgb(135, 135, 237);
 }
 /* Defining and creating div for how nexus knowledge tackel them */
 .nexus-knowledge-tackle{
@@ -429,11 +453,13 @@ footer {
     height: auto;
     width: 100%;
     margin-bottom: 3vh ;
+    color: rgb(100, 100, 255);
     /* border: 1px solid blue;    */
 }
 .nexus-knowledge-tackle-heading p{
     font-weight:bolder;
     font-size: 2.3vw;
+    font-family: "Roboto", serif;
 }
 /* (how nexus knowledge tackel them)'s heading responsive */
 @media (min-width: 850px) and (max-width: 1000px) {
@@ -455,5 +481,9 @@ footer {
 .nexus-knowledge-tackle-content{
     height: auto ;
     width: auto;
+    font-family: "Roboto", serif;
+}
+.nexus-knowledge-tackle-content a{
+    font-family: "Roboto", serif;
 }
 
